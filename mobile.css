@@ -1,0 +1,166 @@
+    body {
+        margin:0;
+        padding:0;
+        background-color:rgb(115, 220, 255);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        user-select:none;
+        -webkit-tap-highlight-color: transparent;
+    }
+  
+    .gameBoard {
+        width:315px;
+        height:315px;
+        font-size:4em;
+        font-weight: 900;
+        border-collapse:collapse;
+        cursor:pointer;
+        font-family: sans-serif;
+        border-radius:5px;
+    }
+
+    .gameBoard tr td{
+        border:5px solid white;
+        width:100px;
+        height:100px;
+        -webkit-tap-highlight-color: transparent;
+        border-radius:30px;
+        text-shadow:0px 0px 2px black;
+    }
+  
+    .gameBoard tr:first-child td{
+        border-top:none;
+    }
+  
+    .gameBoard tr td:first-child {
+        border-left:none;
+    }
+  
+    .gameBoard tr td:last-child {
+        border-right:none;
+    }
+  
+    .gameBoard tr:last-child td{
+        border-bottom: none;
+    }
+  
+    #gameOver {
+        display: none;
+        width:80%;
+        height:35%;
+        background-color:lightblue;
+        z-index:10;
+        border-radius:10px;
+        font-size:1.5em;
+        font-family:Georgia;
+        box-shadow: 0px 0px 10px grey;
+        text-shadow:0px 0px 5px grey;
+        transition: opacity 0.3s ;
+        opacity:0;
+    }
+  
+    #gameOver span {
+        text-shadow:0px 0px 5px grey;
+        text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        color:rgb(251, 255, 0);
+        font-weight:900;
+        font-size:1.2em;
+        font-family:"Times New Roman";
+    }
+    
+    #close {
+        position: fixed;
+        top:20px;
+        right:20px;
+        cursor:pointer;
+        transition:transform 0.2s;
+    }
+    
+    #close:active {
+        color:transparent;
+    }
+    
+    #close:hover {
+        transform:scale(1.2);
+    }
+    
+    #shader {
+        display: none;
+        opacity: 0;
+        margin:0;
+        position: fixed;
+        top:0;
+        left:0;
+        height:100vh;
+        width:100vw;
+        background-color:rgba(0, 0, 0, 0.3);
+        z-index: 9;
+        transition: opacity 0.3s;
+    }
+    
+    .center_FixedContAndText {
+        position: fixed;
+        text-align:center;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    
+    #scoreBoard {
+        position: absolute;
+        top:10%;
+        width:300px;
+        margin-left:50%;
+        transform:translateX(-50%);
+        font-family: monospace;
+        font-weight: 900;
+        text-align:center;
+    }
+    
+    #scoreBoard label {
+        font-size:1.5em;
+        margin-right:10px;
+    }
+
+    #scoreBoard label:nth-child(3) {
+        margin-left:50px;
+    }
+
+    #scoreBoard span {
+        cursor:pointer;
+        font-size:2em;
+        text-shadow:0px 0px 5px black;
+        display:inline-block;
+    }
+    
+    #scoreBoard #playerScore {
+        color: rgb(47, 168, 47); 
+    }
+    
+    #scoreBoard #enemyScore {
+        color:rgb(255, 208, 0);
+    }
+    
+    #restart {
+        position: absolute;
+        left:50%;
+        bottom:5%;
+        transform:translate(-50%, -80%);
+        font-size:2em;
+        font-weight:900;
+        text-shadow:0px 0px 3px grey;
+        font-family: fantasy;
+        cursor:pointer;
+        transition-duration: 0.1s;
+        z-index:8;
+        display:none;
+    }
+    
+    #restart:hover {
+        text-shadow: 0px 0px 5px black;
+        color:white;
+    }

@@ -1,0 +1,29 @@
+@media screen and (min-width:600px) {
+    .gameBoard {
+        width:465px;
+        height:465px;
+    }
+
+    .gameBoard tr td{
+        width:150px;
+        height:150px;
+    }
+
+    #gameOver {
+        width:70%;
+        height:25%;
+    }
+
+    #scoreBoard {
+        width:500px;
+    }
+
+    #scoreBoard label {
+        font-size:3em;
+    }
+
+    #scoreBoard span {
+        font-size:3em;
+    }
+
+}

@@ -1,0 +1,49 @@
+@media screen and (min-width:1100px) {
+  .gameBoard {
+    width:465px;
+    height:465px;
+  }
+
+  .gameBoard tr td{
+    width:150px;
+    height:150px;
+  }
+
+  #gameOver {
+    width:50%;
+    height:60%;
+    border-radius:20px;
+    font-size:3em;
+  }
+
+  #scoreBoard {
+    left:5%;
+    width:auto;
+    top:50%;
+    margin-left:1%;
+    transform:translateY(-50%);
+  }
+
+  #scoreBoard label {
+    font-size:2.5em;
+    margin-left:0;
+  }
+
+  #scoreBoard label:nth-child(3) {
+    margin-left:0px;
+}
+
+  #scoreBoard span {
+    font-size:8em;
+    display:block;
+  }
+
+  #scoreBoard #playerScore {
+    margin-bottom:10%;
+  }
+
+  #restart {
+    left:80%;
+    bottom:60%;
+  }
+}
